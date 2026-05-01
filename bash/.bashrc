@@ -14,3 +14,5 @@ PS1='[\u@\h \W]\$ '
 
 # Add to path
 export PATH="$PATH:~/scripts"
+
+bind "set completion-ignore-case on"

@@ -4,4 +4,4 @@ program = "/usr/bin/bash"
 args = ["--login"]
 
 [window]
-opacity = 0.85
+opacity = 0.95
