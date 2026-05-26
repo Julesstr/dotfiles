@@ -16,3 +16,5 @@ PS1='[\u@\h \W]\$ '
 export PATH="$PATH:~/scripts"
 
 bind "set completion-ignore-case on"
+
+alias alac='alacritty --working-directory "$(pwd)"'
