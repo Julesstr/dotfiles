@@ -1,6 +1,6 @@
 [terminal]
 [terminal.shell]
-program = "/bin/bash"
+program = "/bin/zsh"
 args = ["--login"]
 
 [window]
