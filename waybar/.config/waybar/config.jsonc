@@ -97,7 +97,7 @@
   },
   "pulseaudio": {
     "format": "{icon}",
-    "on-click": "~/scripts/launch_audio",
+    "on-click": "~/scripts/volume-menu.sh",
     "on-click-right": "pamixer -t",
     "tooltip-format": "Playing at {volume}%",
     "scroll-step": 5,
