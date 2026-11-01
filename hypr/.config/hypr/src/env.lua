@@ -1,0 +1,8 @@
+hl.env("XCURSOR_SIZE", "24")
+hl.env("GDK_SCALE", "1")
+hl.env("GDK_DPI_SCALE", "1")
+hl.env("QT_SCALE_FACTOR", "1")
+hl.env("QT_AUTO_SCREEN_SCALE_FACTOR", "0")
+hl.env("WLR_NO_HARDWARE_CURSORS", "1")
+hl.env("GTK_USE_PORTAL", "1")
+-- TODO(hyprvalidate convert): 'env' isn't a modeled top-level directive (hyprland.conf line 38)
