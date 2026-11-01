@@ -38,12 +38,25 @@ hl.config({
 		},
 	},
 })
--- TODO(hyprvalidate convert): 'animations.enabled' = 'yes, please :)' doesn't confidently match its expected type (boolean); 'animations.bezier' is not a known Hyprland config key; 'animations.bezier' is not a known Hyprland config key; 'animations.bezier' is not a known Hyprland config key; 'animations.bezier' is not a known Hyprland config key; 'animations.bezier' is not a known Hyprland config key; 'animations.animation' is not a known Hyprland config key; 'animations.animation' is not a known Hyprland config key; 'animations.animation' is not a known Hyprland config key; 'animations.animation' is not a known Hyprland config key; 'animations.animation' is not a known Hyprland config key; 'animations.animation' is not a known Hyprland config key; 'animations.animation' is not a known Hyprland config key; 'animations.animation' is not a known Hyprland config key; 'animations.animation' is not a known Hyprland config key; 'animations.animation' is not a known Hyprland config key; 'animations.animation' is not a known Hyprland config key; 'animations.animation' is not a known Hyprland config key; 'animations.animation' is not a known Hyprland config key; 'animations.animation' is not a known Hyprland config key; 'animations.animation' is not a known Hyprland config key; 'animations.animation' is not a known Hyprland config key (hyprland.conf line 54)
 hl.config({
 	animations = {
 		enabled = true,
 	},
 })
+
+
+hl.curve("myBezier", { type = "bezier", points = { { 0.05, 0.9 }, { 0.1, 1.05 } } })
+hl.curve("smoothScroll", { type = "bezier", points = { { 0.23, 1.0 }, { 0.32, 1.0 } } })
+hl.animation({ leaf = "windows", enabled = false, speed = 7, bezier = "myBezier" })
+hl.animation({ leaf = "windowsOut", enabled = false, speed = 7, bezier = "default", style = "popin 80%" })
+hl.animation({ leaf = "windowsMove", enabled = false, speed = 4, bezier = "smoothScroll" })
+hl.animation({ leaf = "border", enabled = true, speed = 10, bezier = "default" })
+hl.animation({ leaf = "borderangle", enabled = true, speed = 8, bezier = "default" })
+hl.animation({ leaf = "fade", enabled = true, speed = 7, bezier = "default" })
+hl.animation({ leaf = "workspaces", enabled = true, speed = 1, bezier = "default" })
+
+
+
 hl.config({
 	dwindle = {
 		preserve_split = true,
